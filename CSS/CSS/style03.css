@@ -1,0 +1,87 @@
+/*
+-display
+    -block
+    -inline
+    -inline-block
+    -flex
+
+display block - especifica que o elemento vai ocupar toda a linha. Por padrão as tags que apresentam essa característica são:
+            -div
+            -título
+            -parágrafo
+            -form
+            -header
+            -section
+            -footer
+display inline - especifica que o elemento não ocupa a linha toda e nem se inicia uma próxima linha
+            -a
+            -img
+            -span
+*/
+
+.emBloco{
+    background-color: aquamarine;
+}
+
+.emLinha{
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+.blocoEmLinha{
+    display: inline;
+}
+
+li{
+    display:inline-block;
+    background-color: rgb(96, 87, 14);
+    /*as propriedades altura, largura e margem não funcionam quando o elemento tem a propriedade display como inline*/
+    width: 100px;
+    height: 50px;
+}
+
+.botao{
+    background-color: darkmagenta;
+    color: antiquewhite;
+    border-radius: 10px;
+    text-decoration: none;
+
+    /*A propriedade display com o valor flex possibilita a flexibilidade para posicionar os elementos*/
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 50px;
+    width: 30%;
+    line-height: 50px;
+
+    justify-content: center; /*usado para alinhar o conteudo dentro de outro elemento*/
+}
+
+.vermelho{
+    background-color: red;
+    color: aliceblue;
+   
+}
+
+.verde{
+    background-color: green;
+    color: aliceblue;
+    
+}
+
+.azul{
+    background-color: blue;
+    color: aliceblue;
+
+}
+
+.todasDivs{
+    display: inline-block;
+    height: 60px;
+    width: 30%;
+}
+
+.verde:hover{
+    /*display:none;*/
+    visibility: hidden;
+}

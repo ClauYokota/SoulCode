@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quadrado{
+    width: 400px;
+    height: 400px;
+    background: #2186c4;
+    transition: width 1.5s;
+    /* animation-name:rotacionar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;  VÃO SER COLOCADAS NO JS*/
+
+    /* transition: background 1s; */
+}
+
+.vermelho{
+    background: #b32e2e;
+}
+
+
+/* .quadrado:hover{
+    background: red;
+} */
+
+/*
+@keyframes rotacionar{
+    from (0%) {
+
+    } to (100%) {
+
+    }
+} 
+
+ @keyframes rotacionar{
+    10%{
+
+    } 20%{
+
+    } 25%{
+
+    }
+} */
+
+@keyframes rotacionar{
+    from{
+        width: 500px;
+        transform: rotate(0);
+    } to{
+        width: 550px;
+        transform: rotate(360deg);
+    }
+}

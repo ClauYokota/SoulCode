@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - Dom</title>
+    <style>  .diferente{color: red;} </style>
+    <style>  #unico{color: greenyellow; background-color: orange;} </style>
+    </head>
+<!-- <body ondblclick="alert('Você clicou duas vezes em mim!!!')">
+    <buttom onclick="alert(`Você clicou em mim :O`)">Clique e tenha uma surpresa :)</buttom>
+   
+</body> -->
+
+<body>
+    <!-- <p class="diferente">Lorem</p>
+    <p id="unico">Lorem</p>
+    <p name="para">Lorem</p>
+    <p>Lorem</p>
+    <p name="para">Lorem</p>
+    <p>Lorem</p>
+    <p class="diferente">Lorem</p>
+    <p>Lorem</p>
+    <p name="para">Lorem</p>
+    <p>Lorem</p>
+    <p id="unico">Lorem</p>
+    <p class="diferente">Lorem</p>
+    <p>Lorem</p>
+    <p name="para">Lorem</p>
+    <p>Lorem</p>
+    <p class="diferente">Lorem</p>
+    <p>Lorem</p>
+    <p name="para">Lorem</p>
+    <p>Lorem</p>
+    <p>Lorem</p>
+   
+   
+    <button id="botao">Clique e tenha uma surpresa :)</button>
+    <button name="para">Clique e tenha uma surpresa :)</button>
+    <button class="diferente">Clique e tenha uma surpresa :)</button>
+    
+    <p><a href="https://google.com">Acesse o Google</a></p>
+    
+    <p><a href="https://facebook.com">Facebook</a></p>
+
+    
+    <script>
+        let btn = document.getElementsByTagName('button')[0]  /*faz uma varredura e procura elementos que vc quer procurar e coloca dentro de uma coleção que parece uma array*/
+        console.log(btn)
+
+        btn.innerText = 'Mudei o texto'
+
+        /* btn.onclick = function() {    //melhor não utilizar arrow function ()=>{} pois não consegue acessar a propriedade this.
+            alert(`Você clicou em mim`)
+        } */
+
+        //Array.from(document.getElementsByTagName('button')) - transforma em uma array
+
+        btn.addEventListener('click',() => {
+            alert('Você clicou em mim')
+        })
+
+    </script> -->
+    <div id="lista"> </div>
+    
+    <button>Chamar API</button>
+
+    <script src="Aula10-JS10.js"> </script>
+
+</body>
+</html>

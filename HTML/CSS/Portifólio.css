@@ -1,0 +1,23 @@
+*{
+    background-color: bisque;
+}
+
+#menu{
+    color: black;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+.resumo{
+    color: blue;
+    text-align: center;
+}
+
+.port{
+    text-align: center;
+}
+.form{
+    text-align: center;
+}
