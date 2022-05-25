@@ -10,7 +10,7 @@ body{
 }
 
 .lampada{
-    background-image: url('../Imagem/liagada.png');
+    background-image: url('../Imagem/apagada.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,8 +20,8 @@ body{
 
 }
 
-.apagado{
-    background-image: url('../Imagem/apagada.png');
+.ligado{
+    background-image: url('../Imagem/liagada.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
