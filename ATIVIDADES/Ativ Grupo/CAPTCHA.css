@@ -1,0 +1,9 @@
+.math{
+    display: flex;
+
+    justify-content: flex-start;
+}
+#totalvalores{
+    width: 50px;
+    height: 30px;
+}
