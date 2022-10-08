@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50vh;
+    height: 50vh;
+    border: 1px solid rgb(52, 111, 199);
+    border-radius: 10%;
+}
+
+h2{
+    border-bottom:1px solid rgb(52, 111, 199);
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.body{
+    text-align: justify;
+    overflow-y: auto;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+

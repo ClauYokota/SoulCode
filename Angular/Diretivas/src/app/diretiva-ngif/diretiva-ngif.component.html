@@ -1,0 +1,18 @@
+<h2>Ng If</h2>
+
+<label for="">Mostrar/Remover parágrafo</label>
+<input type = "checkbox" checked="true" #checkbox (input)="checkbox"> 
+
+<p *ngIf="checkbox.checked == true; else alternativo">
+    Marcado
+</p>
+
+<ng-template #alternativo>
+<p>
+    <i>Desmarcado</i>
+</p>
+</ng-template>
+
+<!-- <ng-template> 
+    Para utilizar com condições do tipo ELSE (Senão).
+    Criar uma variavel com o #nomedavarial dentro do ng-template (ex: <ng-template #alternativa> ) para guardar as opções do looping. -->

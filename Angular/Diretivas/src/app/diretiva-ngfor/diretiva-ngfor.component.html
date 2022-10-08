@@ -1,0 +1,28 @@
+<h2>Ng For</h2>
+
+<!-- <table border="1">
+    <tr>
+        <th>Nomes</th>
+    </tr>
+    <tr *ngFor="let nome of nomes">
+        <td>{{nome}}</td>
+    </tr>
+</table> -->
+
+<table border="1">
+    <tr>
+        <th>Nomes</th>
+    </tr>
+    <ng-container *ngFor="let nome of nomes">
+        <tr *ngIf="nome.length > 6">
+            <td>{{nome}}</td>
+        </tr>
+    </ng-container>
+</table>
+
+<input type = "text" #nomeInput>
+<button (click)="add(nomeInput.value)">Adicionar</button>
+
+<ng-container> 
+  <!--   Funciona para colocar duas condições "juntas". Como não é possivel colocar na mesma linha, abrimos um ng-container, primeira condição, depois o comando HTML em si + segunda condição.
+    Exemplo de código> -->

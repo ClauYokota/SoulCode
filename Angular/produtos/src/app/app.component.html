@@ -1,0 +1,28 @@
+<mat-drawer-container class="container">
+
+  <mat-drawer mode="side" opened>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <h1>Produtos</h1>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    
+    <strong *ngIf="produtos.length === 0;else produtosContainer">Nenhum produto cadastrado</strong>
+
+    <ng-template #produtosContainer>
+    <app-product-card
+      *ngFor="let p of produtos"
+      [produtoNome]="p.nome"
+      [produtoPreco]="p.preco"
+      [imagemSrc]="p.foto"
+    ></app-product-card>
+    </ng-template>
+
+    <button mat-mini-fab color="accent" id= "add-produto" (click)="openFormDialog()">add</button>
+
+  </mat-drawer-content>
+
+</mat-drawer-container>

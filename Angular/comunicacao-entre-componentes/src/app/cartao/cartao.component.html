@@ -1,0 +1,7 @@
+<div class="cartao" [style]="gerarCssDoCartao()" >
+    <h4>{{tituloCartao}}</h4>
+    <p>{{textoCartao}}</p>
+    <img [src]="imagem" alt="imagem escolhida">
+
+    <button (click)="emitirDelecaoDoCartao()">&times;</button>
+</div>

@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Cadastro</h1>
+<section mat-dialog-content class="dialog-content">
+    <form [formGroup]="funcionarioForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input type="text" matInput name="funcionario-nome" formControlName="nome">
+            <mat-error></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput name="funcionario-email" formControlName="email">
+            <mat-error></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Foto</mat-label>
+            <input type="text" matInput name="funcionario-foto" formControlName="foto">
+            <mat-error></mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [mat-dialog-close]="funcionarioForm.value"
+            [disabled]="funcionarioForm.invalid">Adicionar<mat-icon>add</mat-icon>
+        </button>
+        <button mat-raised-button color="warn" mat-dialog-close>Cancelar<mat-icon>close</mat-icon>
+        </button>
+    </form>
+</section>

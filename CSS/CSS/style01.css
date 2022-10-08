@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Wall Notes";
+    src: url("../fontes/Wall\ Notes.otf");
+}
+@font-face {
+    font-family: "Fresh Fruit";
+    src: url("../fontes/Fresh\ Fruit.otf");
+}
+
+
+h2{
+    color:rgb(4, 20, 40);
+    text-align: right;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 20px;
+    color:brown;
+    font-family: "Fresh Fruit";
+    font-weight: bold;
+}
+.tituloParagrafo{
+    color:darkgreen;
+    font-size: 25px;
+    background-color: aliceblue;
+    font-family: "Dancing Script"
+}
+
+#especial{
+    color: darkorange;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Wall Notes";
+    
+}

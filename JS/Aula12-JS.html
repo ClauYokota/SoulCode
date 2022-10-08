@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP </title>
+</head>
+<body>
+    <script>
+        fetch('https://viacep.com.br/ws/01001000/json',{
+            method: 'GET' /*GET é padrão, caso queria mudar para POST/PUT é necessário mudar o method*/
+        }).then ((resposta)=>{
+            return resposta.json()
+/* pega os dados e os transforma em objeto JS */
+        }).then ((dados)=>{
+            console.log(dados)
+        })
+        /* https://api.github.com/users/TatianaDChiacchio' */
+    </script>
+
+</body>
+</html>

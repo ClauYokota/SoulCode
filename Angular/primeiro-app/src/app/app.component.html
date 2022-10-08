@@ -1,0 +1,14 @@
+<!-- <div>
+<button (click)="counter('diminuir')">(-)</button>
+<p>Count:{{count}}</p>
+<button (click)="counter('aumentar')">(+)</button>
+</div> -->
+
+<div class="container">
+  <input type="button" [value]="simbolos[1]" (click)="decrementar()"> <!-- property binding -->
+  <p class="counter">
+    {{ contador }} <!-- string interpolation -->
+  </p>
+  <input type="button" value="+" (click)="incrementar()"><!-- mesma coisa -->
+  <input type="number" placeholder="Digite um número" (input)="adicionarValor($event)">
+</div>

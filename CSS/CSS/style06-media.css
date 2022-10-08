@@ -1,0 +1,58 @@
+@media only screen and (max-width:600px){
+    body{
+        background: yellow;
+    }
+}
+
+@media only screen and (min-width:600px){
+    body{
+        background: orangered;
+    }
+}
+
+@media only screen and (min-width:768px){
+    body{
+        background: darkcyan;
+    }
+}
+
+@media only screen and (min-width:992px){
+    body{
+        background: green;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    body{
+        background: pink;
+    }
+    h1{
+        font-size: 35px;
+    }
+}
+
+/*Especificidade Prioridade
+1 - style inline (tag)
+2 - id
+3 - tag + classe
+4 - classe
+5 - tag
+
+
+*/
+
+/* h1{
+    color: yellowgreen;
+} */
+
+/* #meuId{
+    color:yellowgreen;
+} */
+
+.minhaClasse{
+    color: chocolate;
+}
+
+h1.minhaClasse{
+    color: black;
+}

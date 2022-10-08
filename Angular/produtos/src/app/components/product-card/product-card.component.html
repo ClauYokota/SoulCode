@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-header>
+        <img [src]="imagemSrc" mat-card-image>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-card-title>{{produtoNome}}</mat-card-title>
+        <mat-card-subtitle>{{produtoPreco|currency:'BRL'}}</mat-card-subtitle>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+        <button mat-stroked-button color="basic" (click)="openSnackBar()">Comprar</button>
+    </mat-card-actions>
+</mat-card>
